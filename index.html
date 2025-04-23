@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        @font-face {
+            font-family: DogicaPixelnew;
+            src: url(dogicapixel-new.ttf);
+        }
+
+        a:link {
+          color: #578eb6;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:visited {
+          color: #578eb6;
+          background-color: transparent;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: black;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+
+        body {
+            font-family:DogicaPixelnew;font-size:30px;
+            background-image: url('background.png');
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center center;
+            margin-top: 64px;
+            margin-right: 64px;
+            margin-bottom: 64px;
+            margin-left: 64px;
+            text-align: center;
+        }
+
+        h1 {
+			text-align:center;
+			margin: 64px 0 32px 0;
+		}
+
+		/* Container für die Bilder und Unterschriften */
+        .image-container {
+            display: flex;
+            justify-content: center; /* Zentriert die Bilder */
+            gap: 32px; /* Abstand zwischen den Bildern */
+            text-align: center; /* Zentriert die Unterschriften */
+            flex-wrap: wrap; /* Bilder umbrechen, falls der Platz zu klein wird */
+        }
+        /* Stil für jedes Bild und seine Unterschrift */
+        .image-item {
+            box-sizing: border-box;
+            margin-bottom: 20px; /* Abstand nach unten, falls Bilder umbrechen */
+        }
+
+        /* Stil für die Bildunterschriften */
+        .caption {
+            margin-top: 8px;
+        }
+    </style>
+    <title>Fractals</title>
+  </head>
+  <body  style="background-color:#4d4d4d; color:white">
+    <h1>
+		Anomasie
+	</h1>
+    <p>
+        Where do you want to go to? / <i>Wonach suchst du?</i>
+    </p>
+    <p>
+		<div class="image-container">
+			<div class="image-item">
+				<a href="https://anomasie.github.io/SierpinskiCarpets/">
+					<img src="panel-sierpinski.png" alt="Sierpinski Carpets">
+					<div class="caption">Sierpinski Carpets /<br> <i>Sierpinski-Teppiche</i></div>
+				</a>
+			</div>
+			<div class="image-item">
+				<a href="https://anomasie.github.io/Fractals/">
+					<img src="panel-fractals.png" alt="Fractal Generator">
+					<div class="caption">Fractal Generator</div>
+				</a>
+			</div>
+			<div class="image-item">
+				<a href="https://anomasie.github.io/GameOfLife/">
+					<img src="panel-game-of-life.png" alt="Gallery">
+					<div class="caption">Conway's Game Of Life /<br> Conways Spiel des Lebens</div>
+				</a>
+			</div>
+			<div class="image-item">
+				<a href="https://anomasie.github.io/Analysis/serien/">
+					<img src="panel-analysis-website.png" alt="Gallery">
+					<div class="caption">Analysis-Hinweise</div>
+				</a>
+			</div>
+		</div>
+    </p>
+  </body>
+</html>
